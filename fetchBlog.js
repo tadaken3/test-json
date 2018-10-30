@@ -56,8 +56,8 @@ async function asyncMap(array, operation) {
 let resultArray = [];
 asyncMap(feeds, async feed => {
   const response = await fetchRSS(feed)
-  resultArray.push(response)
-  console.log(resultArray)
+  await resultArray.push(response)
+  await console.log(resultArray)
 })
 
 
