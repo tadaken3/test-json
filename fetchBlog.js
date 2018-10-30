@@ -1,32 +1,41 @@
-var FeedParser = require('feedparser');  
-var request = require('request');  
-var feed = 'https://pensuke.work/rss';
+const FeedParser = require('feedparser');  
+const request = require('request');
 
-var req = request(feed);  
+  
 var feedparser = new FeedParser({});
 
-var result = [];
-var items =[];
+let feed = 'https://pensuke.work/rss';
 
-req.on('response', function (res) {  
-  this.pipe(feedparser);
-});
+const fetchRSS = (feed) => {
+  let result;
+  let feedMeta;
+  let items = [];
+  const req = request(feed);
+  
+  req.on('response', function (res) {  
+    this.pipe(feedparser);
+  });
 
-feedparser.on('meta', function(meta) {  
-   result.push({blogTitle: meta.title});
-});
+  feedparser.on('meta', function(meta) {  
+     feedMeta = meta;
+  });
 
-feedparser.on('readable', function() {  
-  while(item = this.read()) {
-    items.push(item);
-  }
-});
+  feedparser.on('readable', function() {  
+    while(item = this.read()) {
+      items.push(item);
+    }
+  });
+  feedparser.on('end', function() {
+    recentlyArticle = items[0]
+    let 
+    result = {
+     'blogTitle' : feedMeta.title,
+     'artTitle' : recentlyArticle.title,
+     'pubdate' : recentlyArticle.pubdate,
+     'link' : recentlyArticle.link
+    }
+    console.log(JSON.stringify(result, null, 4))
+  });
+}
 
-feedparser.on('end', function() {
-   var recentItem = items[0]
-   result.push({articleTitle: recentItem.title});
-   result.push({pubdata: recentItem.pubdate});
-   result.push({link: recentItem.link});
-   console.log(JSON.stringify(result, null, 4))
-});
-
+fetchRSS(feed)
