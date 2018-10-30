@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tadaken3/test-json#readme",
   "dependencies": {
+    "async": "^2.6.1",
     "axios": "^0.18.0",
     "feedparser": "^2.2.9",
     "request": "^2.88.0"
