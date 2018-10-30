@@ -46,7 +46,37 @@ const fetchRSS = (feed) => {
 let feeds =  [
   'https://pensuke.work/rss',
   'https://tadaken3.hatenablog.jp/rss',
-  'https://note.mu/rk_tech/rss'
+  'https://note.mu/rk_tech/rss',
+  'https://note.mu/autsuki/rss',
+  'https://note.mu/msykd/rss',
+  'https://www.nullnullpon.com/feed',
+  'https://note.mu/junjungroove/rss',
+  'https://free-engineer.xrea.jp/blog/feed',
+  'https://note.mu/kawanjin01/rss',
+  'https://mabui.org/feed',
+  'https://note.mu/narith/rss',
+  'https://b-masaki.me/rss',
+  'https://arutega.jp/rss',
+  'https://note.mu/koukimchan/rss',
+  'https://yoshitaku-jp.hatenablog.com/feed',
+  'https://www.sukimanote.com/feed',
+  'https://note.mu/kishiyyyyy/rss',
+  'https://note.mu/koushikagawa/rss',
+  'https://iritec.jp//rss',
+  'https://ikuten.com/rss',
+  'https://rubydesign.jp/blog/feed',
+  'https://www.excel-prog.com/rss'
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 async function asyncMap(array, operation) {
