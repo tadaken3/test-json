@@ -53,36 +53,12 @@ async function asyncMap(array, operation) {
   return Promise.all(array.map(async item => await operation(item)))
 }
 
+let resultArray = [];
 asyncMap(feeds, async feed => {
   const response = await fetchRSS(feed)
-  await console.log(response)
+  resultArray.push(response)
+  console.log(resultArray)
 })
-
-
-
-
-/*求めている結果
-[
- [{ 
-   blogTitle: 'タダケンのEnjoy Tech',
-   articleTitle: 'PythonでSlackにメッセージを送る方法',
-   pubdate: 2018-10-26T21:00:00.000Z,
-   link: 'https://tadaken3.hatenablog.jp/entry/python-slack' 
-  }],
- [{ 
-  　blogTitle: 'コバヤシ リョウタ',
-  　articleTitle: 'ロゴを募集したら素敵なロゴをたくさんご提案いただいた話',
-  　pubdate: 2018-10-25T12:35:15.000Z,
-  　link: 'https://note.mu/rk_tech/n/na346e6bc5bda' 
-　}],
-　[{ 
-    blogTitle: 'ぺんすけブログ',
-    articleTitle: 'プログラミング学習で分からない時の解決方法',
-  　pubdate: 2018-10-26T00:55:15.000Z,
-  　link: 'https://pensuke.work/solve-a-programming-problem/' 
-　}],
-]
-*/
 
 
 
