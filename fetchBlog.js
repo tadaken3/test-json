@@ -53,12 +53,8 @@ async function asyncMap(array, operation) {
   return Promise.all(array.map(async item => await operation(item)))
 }
 
-let resultArray = [];
 asyncMap(feeds, async feed => {
-  const response = await fetchRSS(feed)
-  await resultArray.push(response)
-  await console.log(resultArray)
+  return await fetchRSS(feed)
+}).then(function(response){
+  console.log(JSON.stringify(response,null,4))
 })
-
-
-
