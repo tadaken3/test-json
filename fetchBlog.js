@@ -38,7 +38,7 @@ const fetchRSS = (feed) => {
      'pubdate' : latestArticle.pubdate,
      'link' : latestArticle.link
     }
-    return resolve([result])
+    return resolve(result)
   });
   })
 }
