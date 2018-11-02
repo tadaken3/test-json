@@ -65,18 +65,8 @@ let feeds =  [
   'https://iritec.jp//rss',
   'https://ikuten.com/rss',
   'https://rubydesign.jp/blog/feed',
-  'https://www.excel-prog.com/rss'
-
-
-
-
-
-
-
-
-
-
-
+  'https://www.excel-prog.com/rss',
+  'https://pensuke.netlify.com/feed.xml'
 ];
 
 async function asyncMap(array, operation) {
