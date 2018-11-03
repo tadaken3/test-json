@@ -44,7 +44,8 @@ const fetchRSS = (feed) => {
 }
 
 let feeds =  [
-  'https://pensuke.work/feed.xml',
+  'https://pensuke.netlify.com/feed.xml',
+  'https://pensuke.work/rss'
   'https://tadaken3.hatenablog.jp/rss',
   'https://note.mu/rk_tech/rss',
   'https://note.mu/autsuki/rss',
