@@ -44,7 +44,7 @@ const fetchRSS = (feed) => {
 }
 
 let feeds =  [
-  'https://pensuke.work/rss',
+  'https://pensuke.work/feed.xml',
   'https://tadaken3.hatenablog.jp/rss',
   'https://note.mu/rk_tech/rss',
   'https://note.mu/autsuki/rss',
@@ -65,8 +65,7 @@ let feeds =  [
   'https://iritec.jp//rss',
   'https://ikuten.com/rss',
   'https://rubydesign.jp/blog/feed',
-  'https://www.excel-prog.com/rss',
-  'https://pensuke.netlify.com/feed.xml'
+  'https://www.excel-prog.com/rss'
 ];
 
 async function asyncMap(array, operation) {
