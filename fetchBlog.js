@@ -63,7 +63,9 @@ let feeds =  [
   'https://note.mu/koushikagawa/rss',
   'https://iritec.jp//rss',
   'https://ikuten.com/rss',
-  'https://rubydesign.jp/blog/feed'
+  'https://rubydesign.jp/blog/feed',
+  'http://nyansan.com/feed',
+  'https://pensuke.work/feed.xml'
 ];
 
 async function asyncMap(array, operation) {
