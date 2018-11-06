@@ -10,7 +10,4 @@ function readText(filename){
     }
     return array
 }
-
-let filename = 'blogs.txt'
-
 module.exports.readText = readText;
