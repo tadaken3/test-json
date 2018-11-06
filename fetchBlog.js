@@ -1,5 +1,6 @@
 const FeedParser = require('feedparser');  
 const request = require('request');
+const Files = require('./File.js');
  
 const fetchRSS = (feed) => { 
   let req = request(feed);
@@ -43,31 +44,7 @@ const fetchRSS = (feed) => {
   })
 }
 
-let feeds =  [
-  'https://tadaken3.hatenablog.jp/rss',
-  'https://note.mu/rk_tech/rss',
-  'https://note.mu/autsuki/rss',
-  'https://note.mu/msykd/rss',
-  'https://www.nullnullpon.com/feed',
-  'https://note.mu/junjungroove/rss',
-  'https://free-engineer.xrea.jp/blog/feed',
-  'https://note.mu/kawanjin01/rss',
-  'https://mabui.org/feed',
-  'https://note.mu/narith/rss',
-  'https://b-masaki.me/rss',
-  'https://arutega.jp/rss',
-  'https://note.mu/koukimchan/rss',
-  'https://yoshitaku-jp.hatenablog.com/feed',
-  'https://www.sukimanote.com/feed',
-  'https://note.mu/kishiyyyyy/rss',
-  'https://note.mu/koushikagawa/rss',
-  'https://iritec.jp//rss',
-  'https://ikuten.com/rss',
-  'https://rubydesign.jp/blog/feed',
-  'http://nyansan.com/feed',
-  'https://pensuke.work/feed.xml',
-  'https://note.mu/iritec/rss'  
-];
+let feeds = Files.readText('blogs.txt')
 
 async function asyncMap(array, operation) {
   return Promise.all(array.map(async item => await operation(item)))
