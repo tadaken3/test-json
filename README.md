@@ -1,4 +1,4 @@
-# api-write-blog-every-week
+# api-we-love-blog
 
 ## 概要
 
