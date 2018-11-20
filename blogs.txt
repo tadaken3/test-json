@@ -26,3 +26,4 @@ https://note.mu/chomi1221/rss
 http://coinbaby8.com/feed
 http://masanoribooks.xyz/feed/
 https://tomolog.work/feed
+https://note.mu/thoriumis/rss
