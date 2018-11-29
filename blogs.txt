@@ -21,7 +21,6 @@ https://rubydesign.jp/blog/feed
 http://nyansan.com/feed
 https://pensuke.work/feed.xml
 https://note.mu/iritec/rss
-https://medium.com/feed/@daichan.office
 https://note.mu/chomi1221/rss
 http://coinbaby8.com/feed
 http://masanoribooks.xyz/feed/
