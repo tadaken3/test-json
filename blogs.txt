@@ -29,3 +29,5 @@ https://note.mu/thoriumis/rss
 https://moripro.net/feed/
 https://note.mu/watarunakayama/rss
 https://medium.com/feed/@daichan.office
+https://kang.hateblo.jp/rss
+https://mirainose.com/feed/
