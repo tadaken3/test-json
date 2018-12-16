@@ -16,7 +16,6 @@ https://www.sukimanote.com/feed
 https://note.mu/kishiyyyyy/rss
 https://note.mu/koushikagawa/rss
 https://iritec.jp//rss
-https://ikuten.com/rss
 https://rubydesign.jp/blog/feed
 http://nyansan.com/feed
 https://pensuke.work/feed.xml
