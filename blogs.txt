@@ -21,6 +21,7 @@ https://pensuke.work/feed.xml
 https://note.mu/iritec/rss
 https://note.mu/chomi1221/rss
 http://coinbaby8.com/feed
+http://masanoribooks.xyz/feed/
 https://tomolog.work/feed
 https://note.mu/thoriumis/rss
 https://moripro.net/feed/
